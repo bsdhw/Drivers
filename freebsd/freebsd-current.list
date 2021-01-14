@@ -887,7 +887,6 @@ pci 1022 145b .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ntb/ntb_hw/ntb_hw_a
 pci 1022 145c .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/usb/controller/xhci_pci.c
 pci 1022 1468 .... .... ...... : CONFIG__UNKNOWN__ : sys/crypto/ccp/ccp.c
 pci 1022 1480 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/amdtemp/amdtemp.c
-pci 1022 1486 .... .... ...... : CONFIG__UNKNOWN__ : sys/crypto/ccp/ccp.c
 pci 1022 1487 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/sound/pci/hda/hdac.h
 pci 1022 148b .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ntb/ntb_hw/ntb_hw_amd.c
 pci 1022 1533 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/amdtemp/amdtemp.c
@@ -1283,27 +1282,14 @@ pci 1073 000d .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/sound/pci/ds1.c
 pci 1073 0010 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/sound/pci/ds1.c
 pci 1073 0012 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/sound/pci/ds1.c
 pci 1073 0020 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/sound/pci/ds1.c
-pci 1077 1016 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/isp/isp_pci.c
-pci 1077 1020 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/isp/isp_pci.c
-pci 1077 1080 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/isp/isp_pci.c
-pci 1077 1216 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/isp/isp_pci.c
-pci 1077 1240 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/isp/isp_pci.c
-pci 1077 1280 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/isp/isp_pci.c
 pci 1077 2031 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/isp/isp_pci.c
 pci 1077 2071 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/isp/isp_pci.c
-pci 1077 2100 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/isp/isp_pci.c
 pci 1077 2171 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/isp/isp_pci.c
-pci 1077 2200 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/isp/isp_pci.c
 pci 1077 2261 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/isp/isp_pci.c
-pci 1077 2300 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/isp/isp_pci.c
-pci 1077 2312 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/isp/isp_pci.c
-pci 1077 2322 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/isp/isp_pci.c
 pci 1077 2422 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/isp/isp_pci.c
 pci 1077 2432 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/isp/isp_pci.c
 pci 1077 2532 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/isp/isp_pci.c
 pci 1077 5432 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/isp/isp_pci.c
-pci 1077 6312 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/isp/isp_pci.c
-pci 1077 6322 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/isp/isp_pci.c
 pci 1077 8020 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/qlxgb/qla_os.c
 pci 1077 8030 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/qlxgbe/ql_os.c
 pci 1077 8031 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/isp/isp_pci.c
@@ -1311,8 +1297,6 @@ pci 1078 0100 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/isa_pci.c
 pci 1078 0101 .... .... ...... : CONFIG__UNKNOWN__ : sys/i386/i386/geode.c
 pci 1078 0102 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ata/ata-pci.h
 pci 1080 c693 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ata/ata-pci.h
-pci 108e 1000 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/hme/if_hme_pci.c
-pci 108e 1001 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/hme/if_hme_pci.c
 pci 108e 1101 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/gem/if_gem_pci.c
 pci 108e 1103 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/usb/controller/ohci_pci.c
 pci 108e 2bad .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/gem/if_gem_pci.c
@@ -1969,6 +1953,7 @@ pci 10ec 8139 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/re/if_re.c
 pci 10ec 8139 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/rl/if_rl.c
 pci 10ec 8161 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/re/if_re.c
 pci 10ec 8167 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/re/if_re.c
+pci 10ec 8168 .... .... ...... : CONFIG__UNKNOWN__ : sys/arm64/iommu/smmu_quirks.c
 pci 10ec 8168 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/re/if_re.c
 pci 10ec 8169 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/re/if_re.c
 pci 10ec 8176 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/rtwn/pci/rtwn_pci_attach.h
@@ -3453,7 +3438,13 @@ pci 8086 0166 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/drm2/drm_pciids.h
 pci 8086 0166 .... .... ...... : CONFIG__UNKNOWN__ : sys/x86/pci/pci_early_quirks.h
 pci 8086 016a .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/drm2/drm_pciids.h
 pci 8086 016a .... .... ...... : CONFIG__UNKNOWN__ : sys/x86/pci/pci_early_quirks.h
+pci 8086 02c5 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichiic/ig4_pci.c
+pci 8086 02c6 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichiic/ig4_pci.c
 pci 8086 02c8 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/sound/pci/hda/hdac.h
+pci 8086 02e8 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichiic/ig4_pci.c
+pci 8086 02e9 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichiic/ig4_pci.c
+pci 8086 02ea .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichiic/ig4_pci.c
+pci 8086 02eb .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichiic/ig4_pci.c
 pci 8086 0402 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/drm2/drm_pciids.h
 pci 8086 0402 .... .... ...... : CONFIG__UNKNOWN__ : sys/x86/pci/pci_early_quirks.h
 pci 8086 0406 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/drm2/drm_pciids.h
@@ -3479,12 +3470,18 @@ pci 8086 042a .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/drm2/drm_pciids.h
 pci 8086 042a .... .... ...... : CONFIG__UNKNOWN__ : sys/x86/pci/pci_early_quirks.h
 pci 8086 042b .... .... ...... : CONFIG__UNKNOWN__ : sys/x86/pci/pci_early_quirks.h
 pci 8086 042e .... .... ...... : CONFIG__UNKNOWN__ : sys/x86/pci/pci_early_quirks.h
+pci 8086 0435 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/qat/qat.c
 pci 8086 0438 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/e1000/if_em.c
 pci 8086 043a .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/e1000/if_em.c
 pci 8086 043c .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/e1000/if_em.c
 pci 8086 0440 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/e1000/if_em.c
+pci 8086 0443 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/qat/qat.c
 pci 8086 0484 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/isa_pci.c
 pci 8086 06c8 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/sound/pci/hda/hdac.h
+pci 8086 06e8 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichiic/ig4_pci.c
+pci 8086 06e9 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichiic/ig4_pci.c
+pci 8086 06ea .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichiic/ig4_pci.c
+pci 8086 06eb .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichiic/ig4_pci.c
 pci 8086 080a .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/sound/pci/hda/hdac.h
 pci 8086 0885 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/iwn/if_iwn.c
 pci 8086 0886 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/iwn/if_iwn.c
@@ -3989,6 +3986,8 @@ pci 8086 19d8 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/uart/uart_bus_pci.c
 pci 8086 19db .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/sdhci/sdhci_pci.c
 pci 8086 19df .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichsmb/ichsmb_pci.c
 pci 8086 19df .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichwd/ichwd.c
+pci 8086 19e2 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/qat/qat.c
+pci 8086 19e3 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/qat/qat.c
 pci 8086 1a21 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/agp/agp_intel.c
 pci 8086 1a30 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/agp/agp_intel.c
 pci 8086 1a30 .... .... ...... : CONFIG__UNKNOWN__ : sys/x86/pci/pci_bus.c
@@ -4120,6 +4119,7 @@ pci 8086 1e5d .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichwd/ichwd.c
 pci 8086 1e5e .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichwd/ichwd.c
 pci 8086 1e5f .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichwd/ichwd.c
 pci 8086 1f15 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ismt/ismt.c
+pci 8086 1f18 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/qat/qat.c
 pci 8086 1f20 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ata/ata-pci.h
 pci 8086 1f21 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ata/ata-pci.h
 pci 8086 1f22 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ahci/ahci_pci.c
@@ -4521,6 +4521,7 @@ pci 8086 3717 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ioat/ioat.c
 pci 8086 3718 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ioat/ioat.c
 pci 8086 3719 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ioat/ioat.c
 pci 8086 3725 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ntb/ntb_hw/ntb_hw_intel.c
+pci 8086 37c8 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/qat/qat.c
 pci 8086 37cd .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ixl/if_iavf.c
 pci 8086 37ce .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ixl/if_ixl.c
 pci 8086 37cf .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ixl/if_ixl.c
@@ -4637,6 +4638,13 @@ pci 8086 423a .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/iwn/if_iwn.c
 pci 8086 423b .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/iwn/if_iwn.c
 pci 8086 423c .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/iwn/if_iwn.c
 pci 8086 423d .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/iwn/if_iwn.c
+pci 8086 43ad .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichiic/ig4_pci.c
+pci 8086 43ae .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichiic/ig4_pci.c
+pci 8086 43d8 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichiic/ig4_pci.c
+pci 8086 43e8 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichiic/ig4_pci.c
+pci 8086 43e9 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichiic/ig4_pci.c
+pci 8086 43ea .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichiic/ig4_pci.c
+pci 8086 43eb .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichiic/ig4_pci.c
 pci 8086 4b55 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/sound/pci/hda/hdac.h
 pci 8086 4dc8 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/sound/pci/hda/hdac.h
 pci 8086 5032 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichsmb/ichsmb_pci.c
@@ -4706,6 +4714,8 @@ pci 8086 6f50 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ioat/ioat.c
 pci 8086 6f51 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ioat/ioat.c
 pci 8086 6f52 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ioat/ioat.c
 pci 8086 6f53 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ioat/ioat.c
+pci 8086 6f54 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/qat/qat.c
+pci 8086 6f55 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/qat/qat.c
 pci 8086 7000 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/isa_pci.c
 pci 8086 7010 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ata/ata-pci.h
 pci 8086 7020 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/usb/controller/uhci_pci.c
@@ -4974,7 +4984,15 @@ pci 8086 a001 .... .... ...... : CONFIG__UNKNOWN__ : sys/x86/pci/pci_early_quirk
 pci 8086 a011 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/agp/agp_i810.c
 pci 8086 a011 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/drm2/drm_pciids.h
 pci 8086 a011 .... .... ...... : CONFIG__UNKNOWN__ : sys/x86/pci/pci_early_quirks.h
+pci 8086 a0c5 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichiic/ig4_pci.c
+pci 8086 a0c6 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichiic/ig4_pci.c
 pci 8086 a0c8 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/sound/pci/hda/hdac.h
+pci 8086 a0d8 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichiic/ig4_pci.c
+pci 8086 a0d9 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichiic/ig4_pci.c
+pci 8086 a0e8 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichiic/ig4_pci.c
+pci 8086 a0e9 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichiic/ig4_pci.c
+pci 8086 a0ea .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichiic/ig4_pci.c
+pci 8086 a0eb .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichiic/ig4_pci.c
 pci 8086 a102 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ahci/ahci_pci.c
 pci 8086 a103 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ahci/ahci_pci.c
 pci 8086 a105 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ahci/ahci_pci.c
@@ -5016,6 +5034,10 @@ pci 8086 a36a .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichiic/ig4_pci.c
 pci 8086 a36b .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichiic/ig4_pci.c
 pci 8086 a36d .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/usb/controller/xhci_pci.c
 pci 8086 a370 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/iwm/if_iwm.c
+pci 8086 a3e0 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichiic/ig4_pci.c
+pci 8086 a3e1 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichiic/ig4_pci.c
+pci 8086 a3e2 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichiic/ig4_pci.c
+pci 8086 a3e3 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ichiic/ig4_pci.c
 pci 8086 a3f0 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/sound/pci/hda/hdac.h
 pci 8086 d600 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/sound/pci/hda/hdac.h
 pci 8086 ffff .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/sound/pci/hda/hdac.h
@@ -5957,6 +5979,7 @@ usb 0557 2002 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/net/
 usb 0557 2007 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/net/if_aue.c
 usb 0557 2008 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/serial/uplcom.c
 usb 0557 2009 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/net/if_axe.c
+usb 0557 2022 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/serial/uplcom.c
 usb 0557 4000 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/net/if_kue.c
 usb 055d 2018 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/wlan/if_run.c
 usb 0562 0001 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/quirk/usb_quirk.c
@@ -6140,6 +6163,8 @@ usb 05c6 9205 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/seri
 usb 05c7 2011 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/quirk/usb_quirk.c
 usb 05cc 2265 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/quirk/usb_quirk.c
 usb 05cc 3000 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/net/if_aue.c
+usb 05d1 5001 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/serial/uftdi.c
+usb 05d1 5002 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/serial/uftdi.c
 usb 05db 0003 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/serial/uvscom.c
 usb 05db 0005 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/serial/uvscom.c
 usb 05db 0009 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/serial/uvscom.c
@@ -6452,6 +6477,8 @@ usb 0915 2000 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/wlan
 usb 0915 2002 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/wlan/if_upgt.c
 usb 091e 0004 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/serial/uvisor.c
 usb 091e 086d .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/quirk/usb_quirk.c
+usb 091e 23c0 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/quirk/usb_quirk.c
+usb 091e 2459 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/quirk/usb_quirk.c
 usb 0921 1001 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/serial/ubsa.c
 usb 0922 1001 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/quirk/usb_quirk.c
 usb 0924 ffef .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/quirk/usb_quirk.c
@@ -7408,6 +7435,7 @@ usb 148f 2573 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/wlan
 usb 148f 2671 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/wlan/if_rum.c
 usb 148f 2770 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/wlan/if_run.c
 usb 148f 2870 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/wlan/if_run.c
+usb 148f 2878 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/quirk/usb_quirk.c
 usb 148f 2878 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/wlan/if_run.c
 usb 148f 3070 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/wlan/if_run.c
 usb 148f 3071 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/wlan/if_run.c
