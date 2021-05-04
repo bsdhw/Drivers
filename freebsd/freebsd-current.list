@@ -1944,6 +1944,15 @@ pci 10ec 0900 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/sound/pci/hda/hdac.
 pci 10ec 0b00 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/sound/pci/hda/hdac.h
 pci 10ec 1168 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/sound/pci/hda/hdac.h
 pci 10ec 1220 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/sound/pci/hda/hdac.h
+pci 10ec 5209 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/rtsx/rtsx.c
+pci 10ec 5227 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/rtsx/rtsx.c
+pci 10ec 5229 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/rtsx/rtsx.c
+pci 10ec 522a .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/rtsx/rtsx.c
+pci 10ec 5249 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/rtsx/rtsx.c
+pci 10ec 525a .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/rtsx/rtsx.c
+pci 10ec 5286 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/rtsx/rtsx.c
+pci 10ec 5287 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/rtsx/rtsx.c
+pci 10ec 5289 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/rtsx/rtsx.c
 pci 10ec 8039 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/rl/if_rl.c
 pci 10ec 8100 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/rl/if_rl.c
 pci 10ec 8129 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/rl/if_rl.c
