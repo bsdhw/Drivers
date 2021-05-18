@@ -8595,6 +8595,7 @@ usb 2c7c 0125 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/seri
 usb 3195 f190 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/serial/uslcom.c
 usb 3195 f280 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/serial/uslcom.c
 usb 3195 f281 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/serial/uslcom.c
+usb 3310 0100 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/arm/nvidia/drm2/tegra_hdmi.c
 usb 3334 1701 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/net/if_aue.c
 usb 3340 011c .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/serial/uipaq.c
 usb 3340 0326 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/serial/uipaq.c

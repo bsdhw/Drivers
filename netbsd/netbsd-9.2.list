@@ -1,4 +1,5 @@
 pci 0e11 0002 .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/x86/pci/pcib.c
+pci 0e11 0046 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ciss_pci.c
 pci 0e11 4030 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/cac_pci.c
 pci 0e11 4031 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/cac_pci.c
 pci 0e11 4032 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/cac_pci.c
@@ -9,9 +10,15 @@ pci 0e11 4048 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/cac_pci.c
 pci 0e11 4050 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/cac_pci.c
 pci 0e11 4051 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/cac_pci.c
 pci 0e11 4058 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/cac_pci.c
+pci 0e11 4070 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ciss_pci.c
 pci 0e11 4080 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ciss_pci.c
 pci 0e11 4082 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ciss_pci.c
 pci 0e11 4083 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ciss_pci.c
+pci 0e11 4091 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ciss_pci.c
+pci 0e11 409a .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ciss_pci.c
+pci 0e11 409b .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ciss_pci.c
+pci 0e11 409c .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ciss_pci.c
+pci 0e11 409d .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ciss_pci.c
 pci 0e11 ae10 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/cac_pci.c
 pci 0e11 ae32 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_tl.c
 pci 0e11 ae34 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_tl.c
@@ -21,7 +28,9 @@ pci 0e11 ae43 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_tl.c
 pci 0e11 b011 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_tl.c
 pci 0e11 b012 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_tl.c
 pci 0e11 b030 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_tl.c
+pci 0e11 b060 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ciss_pci.c
 pci 0e11 b112 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/esm.c
+pci 0e11 b178 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ciss_pci.c
 pci 0e11 f130 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_tl.c
 pci 0e11 f150 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_tl.c
 pci 1000 0001 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/siop_pci_common.c
@@ -1620,6 +1629,7 @@ pci 1011 0004 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/tga.c
 pci 1011 0009 .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/newsmips/apbus/if_tlp_ap.c
 pci 1011 0009 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_tlp_pci.c
 pci 1011 000d .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/tga.c
+pci 1011 000f .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_fpa.c
 pci 1011 0014 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_tlp_pci.c
 pci 1011 0019 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/cardbus/if_tlp_cardbus.c
 pci 1011 0019 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_tlp_pci.c
@@ -1638,6 +1648,7 @@ pci 1014 002d .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/powerpc/pci/pchb.c
 pci 1014 002e .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ips.c
 pci 1014 0037 .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/powerpc/pci/pchb.c
 pci 1014 0153 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/cs4280.c
+pci 1014 0156 .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/evbppc/walnut/pci/pchb.c
 pci 1014 0156 .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/powerpc/ibm4xx/pci/pchb.c
 pci 1014 01bd .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ips.c
 pci 1014 0295 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ibmcd.c
@@ -1662,12 +1673,8 @@ pci 1022 1203 .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/x86/pci/amdnb_misc
 pci 1022 1203 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/agp_amd64.c
 pci 1022 1303 .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/x86/pci/amdnb_misc.c
 pci 1022 1450 .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/x86/pci/amdsmn.c
-pci 1022 1456 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/amdccp_pci.c
-pci 1022 1468 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/amdccp_pci.c
 pci 1022 1480 .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/x86/pci/amdsmn.c
-pci 1022 1486 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/amdccp_pci.c
 pci 1022 1533 .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/x86/pci/amdnb_misc.c
-pci 1022 1537 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/amdccp_pci.c
 pci 1022 1576 .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/x86/pci/amdsmn.c
 pci 1022 1583 .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/x86/pci/amdnb_misc.c
 pci 1022 15d0 .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/x86/pci/amdsmn.c
@@ -1675,6 +1682,7 @@ pci 1022 1603 .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/x86/pci/amdnb_misc
 pci 1022 1703 .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/x86/pci/amdnb_misc.c
 pci 1022 2000 .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/i386/stand/lib/netif/pcnet_pci.c
 pci 1022 2000 .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/sandpoint/stand/altboot/pcn.c
+pci 1022 2000 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_le_pci.c
 pci 1022 2000 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_pcn.c
 pci 1022 2020 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/pcscp.c
 pci 1022 2082 .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/i386/pci/glxsb.c
@@ -1984,6 +1992,26 @@ pci 103c 2b16 .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm2/dist/
 pci 103c 2b20 .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm2/dist/drm/nouveau/nvkm/engine/device/nouveau_nvkm_engine_device_pci.c
 pci 103c 2b21 .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm2/dist/drm/nouveau/nvkm/engine/device/nouveau_nvkm_engine_device_pci.c
 pci 103c 2b2b .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm2/dist/drm/nouveau/nvkm/engine/device/nouveau_nvkm_engine_device_pci.c
+pci 103c 3210 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ciss_pci.c
+pci 103c 3211 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ciss_pci.c
+pci 103c 3212 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ciss_pci.c
+pci 103c 3213 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ciss_pci.c
+pci 103c 3214 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ciss_pci.c
+pci 103c 3220 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ciss_pci.c
+pci 103c 3222 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ciss_pci.c
+pci 103c 3223 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ciss_pci.c
+pci 103c 3225 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ciss_pci.c
+pci 103c 3230 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ciss_pci.c
+pci 103c 3231 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ciss_pci.c
+pci 103c 3232 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ciss_pci.c
+pci 103c 3233 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ciss_pci.c
+pci 103c 3236 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ciss_pci.c
+pci 103c 3237 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ciss_pci.c
+pci 103c 3238 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ciss_pci.c
+pci 103c 3239 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ciss_pci.c
+pci 103c 323a .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ciss_pci.c
+pci 103c 323b .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ciss_pci.c
+pci 103c 323c .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ciss_pci.c
 pci 103c 360b .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm2/dist/drm/nouveau/nvkm/engine/device/nouveau_nvkm_engine_device_pci.c
 pci 1043 0002 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/microcode/bge/if_bge_firmware.h
 pci 1043 0048 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ic/arn9280reg.h
@@ -2367,6 +2395,7 @@ pci 10cd 2500 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ic/adwlib.c
 pci 10cd 2500 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/adw_pci.c
 pci 10cd 2700 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ic/adwlib.c
 pci 10cd 2700 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/adw_pci.c
+pci 10cf 1326 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/azalia_codec.c
 pci 10cf 17f5 .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm2/dist/drm/nouveau/nvkm/engine/device/nouveau_nvkm_engine_device_pci.c
 pci 10d2 8040 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/pucdata.c
 pci 10d9 0512 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_tlp_pci.c
@@ -2572,7 +2601,6 @@ pci 10de 0325 .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm/dist/b
 pci 10de 0326 .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm/dist/bsd-core/drm_pciids.h
 pci 10de 0327 .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm/dist/bsd-core/drm_pciids.h
 pci 10de 0328 .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm/dist/bsd-core/drm_pciids.h
-pci 10de 0329 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/gffb.c
 pci 10de 0329 .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm/dist/bsd-core/drm_pciids.h
 pci 10de 032a .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm/dist/bsd-core/drm_pciids.h
 pci 10de 032b .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm/dist/bsd-core/drm_pciids.h
@@ -2736,7 +2764,6 @@ pci 10e8 818e .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/pucdata.c
 pci 10ea 1682 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/igsfb_pci.c
 pci 10ea 2000 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/igsfb_pci.c
 pci 10ea 2010 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/igsfb_pci.c
-pci 10ec 3000 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_rge.c
 pci 10ec 5209 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/rtsx_pci.c
 pci 10ec 5227 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/rtsx_pci.c
 pci 10ec 5229 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/rtsx_pci.c
@@ -2748,7 +2775,6 @@ pci 10ec 5289 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/rtsx_pci.c
 pci 10ec 8029 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_ne_pci.c
 pci 10ec 8039 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_rtk_pci.c
 pci 10ec 8100 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_rtk_pci.c
-pci 10ec 8125 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_rge.c
 pci 10ec 8129 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_rtk_pci.c
 pci 10ec 8136 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_re_pci.c
 pci 10ec 8138 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/cardbus/if_rtk_cardbus.c
@@ -2857,7 +2883,6 @@ pci 1106 3344 .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm2/dist/
 pci 1106 3349 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ahcisata_pci.c
 pci 1106 3349 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/viaide.c
 pci 1106 3371 .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm2/dist/include/drm/drm_pciids.h
-pci 1106 3483 .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/arm/broadcom/bcm2838_pcie.c
 pci 1106 5324 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/viaide.c
 pci 1106 5337 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/viaide.c
 pci 1106 5372 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/viaide.c
@@ -2978,9 +3003,6 @@ pci 1180 e822 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/sdhc_pci.c
 pci 1180 e823 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/sdhc_pci.c
 pci 1186 00fd .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/amiga/dev/repulse_firmware.h
 pci 1186 1002 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_ste.c
-pci 1186 1003 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_ste.c
-pci 1186 1012 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_ste.c
-pci 1186 1040 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_ste.c
 pci 1186 1300 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_rtk_pci.c
 pci 1186 1340 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/cardbus/if_rtk_cardbus.c
 pci 1186 3300 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/cardbus/if_rtw_cardbus.c
@@ -3105,6 +3127,8 @@ pci 120e 0103 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/cy_pci.c
 pci 120e 0104 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/cy_pci.c
 pci 120e 0105 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/cy_pci.c
 pci 120e 0201 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/cz.c
+pci 120f 0001 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_esh_pci.c
+pci 120f 0005 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_esh_pci.c
 pci 1217 6729 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/pccbb.c
 pci 1217 673a .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/pccbb.c
 pci 1217 6832 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/pccbb.c
@@ -3136,7 +3160,6 @@ pci 1259 a117 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/cardbus/if_rtk_card
 pci 1259 a11e .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/cardbus/if_rtk_cardbus.c
 pci 1259 c107 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_re_pci.c
 pci 125b 1400 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_tlp_pci.c
-pci 125b 9100 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/pucdata.c
 pci 125d 0100 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/esm.c
 pci 125d 1968 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/esm.c
 pci 125d 1969 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/eso.c
@@ -3486,17 +3509,11 @@ pci 152d 1092 .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm2/dist/
 pci 1592 0781 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/pucdata.c
 pci 1592 0786 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/pucdata.c
 pci 15ab 5601 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ubsec.c
-pci 15ad 07b0 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_vmx.c
+pci 15ad 07b0 .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/x86/pci/if_vmx.c
 pci 15b3 1013 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_mcx.c
-pci 15b3 1014 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_mcx.c
 pci 15b3 1015 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_mcx.c
-pci 15b3 1016 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_mcx.c
 pci 15b3 1017 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_mcx.c
-pci 15b3 1018 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_mcx.c
 pci 15b3 1019 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_mcx.c
-pci 15b3 101a .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_mcx.c
-pci 15b3 101b .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_mcx.c
-pci 15b3 101d .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_mcx.c
 pci 15e8 0130 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_wi_pci.c
 pci 15e8 0131 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_wi_pci.c
 pci 1600 0100 .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/dreamcast/dev/g2/gapspci_pci.c
@@ -3791,8 +3808,6 @@ pci 1a3b 1059 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/ic/rt2860.c
 pci 1a3b 1059 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_ral_pci.c
 pci 1af4 1000 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/virtio_pci.c
 pci 1af4 103f .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/virtio_pci.c
-pci 1af4 1040 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/virtio_pci.c
-pci 1af4 107f .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/virtio_pci.c
 pci 1b0a 20dd .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm2/dist/drm/nouveau/nvkm/engine/device/nouveau_nvkm_engine_device_pci.c
 pci 1b0a 20df .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm2/dist/drm/nouveau/nvkm/engine/device/nouveau_nvkm_engine_device_pci.c
 pci 1b0a 210e .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm2/dist/drm/nouveau/nvkm/engine/device/nouveau_nvkm_engine_device_pci.c
@@ -3996,7 +4011,6 @@ pci 8086 0484 .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/x86/pci/pcib.c
 pci 8086 0486 .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/x86/pci/pcib.c
 pci 8086 0600 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/icp_pci.c
 pci 8086 061f .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/icp_pci.c
-pci 8086 06a3 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ichsmb.c
 pci 8086 0887 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_iwn.c
 pci 8086 0888 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_iwn.c
 pci 8086 088e .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_iwn.c
@@ -4033,7 +4047,6 @@ pci 8086 0a26 .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm2/dist/
 pci 8086 0a2a .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm2/dist/include/drm/i915_pciids.h
 pci 8086 0a2b .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm2/dist/include/drm/i915_pciids.h
 pci 8086 0a2e .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm2/dist/include/drm/i915_pciids.h
-pci 8086 0a54 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/nvme_pci.c
 pci 8086 0a84 .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm2/dist/include/drm/i915_pciids.h
 pci 8086 0c02 .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm2/dist/include/drm/i915_pciids.h
 pci 8086 0c06 .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm2/dist/include/drm/i915_pciids.h
@@ -4289,7 +4302,6 @@ pci 8086 153a .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_wm.c
 pci 8086 153b .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_wm.c
 pci 8086 1546 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_wm.c
 pci 8086 154a .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ixgbe/ixgbe.c
-pci 8086 154c .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_iavf.c
 pci 8086 154d .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ixgbe/ixgbe.c
 pci 8086 1557 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ixgbe/ixgbe.c
 pci 8086 1558 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ixgbe/ixgbe.c
@@ -4302,21 +4314,8 @@ pci 8086 1563 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ixgbe/ixgbe.c
 pci 8086 1565 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ixgbe/ixv.c
 pci 8086 156f .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_wm.c
 pci 8086 1570 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_wm.c
-pci 8086 1571 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_iavf.c
-pci 8086 1572 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_ixl.c
 pci 8086 157b .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_wm.c
 pci 8086 157c .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_wm.c
-pci 8086 1580 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_ixl.c
-pci 8086 1581 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_ixl.c
-pci 8086 1583 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_ixl.c
-pci 8086 1584 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_ixl.c
-pci 8086 1585 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_ixl.c
-pci 8086 1586 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_ixl.c
-pci 8086 1587 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_ixl.c
-pci 8086 1588 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_ixl.c
-pci 8086 1589 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_ixl.c
-pci 8086 158a .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_ixl.c
-pci 8086 158b .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_ixl.c
 pci 8086 15a0 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_wm.c
 pci 8086 15a1 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_wm.c
 pci 8086 15a2 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_wm.c
@@ -4407,14 +4406,13 @@ pci 8086 1932 .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm2/dist/
 pci 8086 193a .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm2/dist/include/drm/i915_pciids.h
 pci 8086 193b .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm2/dist/include/drm/i915_pciids.h
 pci 8086 193d .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm2/dist/include/drm/i915_pciids.h
+pci 8086 1960 .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/evbppc/walnut/pci/pchb.c
 pci 8086 1960 .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/powerpc/ibm4xx/pci/pchb.c
 pci 8086 1960 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/amr.c
 pci 8086 1960 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/iop_pci.c
 pci 8086 1962 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/iop_pci.c
 pci 8086 19ac .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ismt.c
 pci 8086 19df .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ichsmb.c
-pci 8086 19e2 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/qat/qat.c
-pci 8086 19e3 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/qat/qat.c
 pci 8086 1a21 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/agp.c
 pci 8086 1a21 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/agp_i810.c
 pci 8086 1a23 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/agp_intel.c
@@ -4468,7 +4466,6 @@ pci 8086 1e5d .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/x86/pci/ichlpcib.c
 pci 8086 1e5e .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/x86/pci/ichlpcib.c
 pci 8086 1e5f .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/x86/pci/ichlpcib.c
 pci 8086 1f15 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ismt.c
-pci 8086 1f18 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/qat/qat.c
 pci 8086 1f38 .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/x86/pci/ichlpcib.c
 pci 8086 1f39 .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/x86/pci/ichlpcib.c
 pci 8086 1f3a .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/x86/pci/ichlpcib.c
@@ -4777,7 +4774,6 @@ pci 8086 3166 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_iwm.c
 pci 8086 31d4 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ichsmb.c
 pci 8086 3200 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/artsata.c
 pci 8086 3341 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/agp_intel.c
-pci 8086 34a3 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ichsmb.c
 pci 8086 3575 .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/x86/pci/pchb.c
 pci 8086 3575 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/agp.c
 pci 8086 3577 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/agp_i810.c
@@ -4795,14 +4791,6 @@ pci 8086 3582 .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm2/dist/
 pci 8086 3582 .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm/dist/bsd-core/drm_pciids.h
 pci 8086 358e .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm2/dist/include/drm/i915_pciids.h
 pci 8086 3591 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/acpi/acpi_mcfg.c
-pci 8086 37c8 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/qat/qat.c
-pci 8086 37cd .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_iavf.c
-pci 8086 37ce .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_ixl.c
-pci 8086 37cf .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_ixl.c
-pci 8086 37d0 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_ixl.c
-pci 8086 37d1 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_ixl.c
-pci 8086 37d2 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_ixl.c
-pci 8086 37d3 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/if_ixl.c
 pci 8086 3a00 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/piixide.c
 pci 8086 3a06 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/piixide.c
 pci 8086 3a14 .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/x86/pci/ichlpcib.c
@@ -4886,8 +4874,6 @@ pci 8086 5a85 .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm2/dist/
 pci 8086 5ad4 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ichsmb.c
 pci 8086 61bf .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/mca/mcadevs_data.h
 pci 8086 628b .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/mca/mcadevs_data.h
-pci 8086 6f54 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/qat/qat.c
-pci 8086 6f55 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/qat/qat.c
 pci 8086 6f68 .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/x86/pci/imcsmb/imc.c
 pci 8086 6f68 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/pci_quirks.c
 pci 8086 6fa8 .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/x86/pci/imcsmb/imc.c
@@ -4929,7 +4915,6 @@ pci 8086 719b .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/i386/pci/piixpcib.
 pci 8086 719b .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/x86/acpi/acpi_cpu_md.c
 pci 8086 719b .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/piixpm.c
 pci 8086 71a1 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/agp_intel.c
-pci 8086 7360 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/xmm7360.c
 pci 8086 7788 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/mca/mcadevs_data.h
 pci 8086 811a .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/schide.c
 pci 8086 8186 .... .... ...... : CONFIG__UNKNOWN__ : sys/arch/x86/pci/tcpcib.c
@@ -4985,7 +4970,6 @@ pci 8086 a011 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/agp_i810.c
 pci 8086 a011 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/igma.c
 pci 8086 a011 .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm2/dist/include/drm/i915_pciids.h
 pci 8086 a011 .... .... ...... : CONFIG__UNKNOWN__ : sys/external/bsd/drm/dist/bsd-core/drm_pciids.h
-pci 8086 a0a3 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ichsmb.c
 pci 8086 a123 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ichsmb.c
 pci 8086 a13d .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/pucdata.c
 pci 8086 a1a3 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/ichsmb.c
@@ -5091,7 +5075,6 @@ pci 9710 9835 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/pucdata.c
 pci 9710 9845 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/pucdata.c
 pci 9710 9855 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/pucdata.c
 pci 9710 9865 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/pucdata.c
-pci 9710 9900 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/pucdata.c
 pci 9710 9901 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/pucdata.c
 pci 9710 9904 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/pucdata.c
 pci 9710 9912 .... .... ...... : CONFIG__UNKNOWN__ : sys/dev/pci/pucdata.c
@@ -5228,12 +5211,14 @@ usb 0458 0001 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/usb_
 usb 0458 0040 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/external/bsd/drm2/dist/drm/nouveau/nvkm/engine/gr/nouveau_nvkm_engine_gr_nv04.c
 usb 0458 0040 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/external/bsd/drm2/dist/drm/nouveau/nvkm/engine/gr/nouveau_nvkm_engine_gr_nv10.c
 usb 0458 2001 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/uscanner.c
+usb 045a 5001 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/urio.c
+usb 045a 5002 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/urio.c
+usb 045a 5003 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/urio.c
 usb 045e 007a .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_aue.c
 usb 045e 00e1 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/ums.c
 usb 045e 071d .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/ums.c
 usb 045e 071f .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/ums.c
 usb 045e 077d .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/ums.c
-usb 045e 07b2 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/ums.c
 usb 0461 0300 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/uscanner.c
 usb 0461 0301 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/uscanner.c
 usb 0461 0302 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/uscanner.c
@@ -5347,7 +5332,6 @@ usb 04e8 6863 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_u
 usb 04e8 6881 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_urndis.c
 usb 04e8 a000 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_atu.c
 usb 04f1 3008 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_axe.c
-usb 04f2 0939 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/ums.c
 usb 04f2 aff7 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_urtwn.c
 usb 04f2 aff8 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_urtwn.c
 usb 04f2 aff9 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_urtwn.c
@@ -5365,7 +5349,6 @@ usb 050d 0050 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_a
 usb 050d 0103 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/ubsa.c
 usb 050d 0109 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/umct.c
 usb 050d 0121 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_aue.c
-usb 050d 1004 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 050d 1004 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_urtwn.c
 usb 050d 1102 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_urtwn.c
 usb 050d 11f2 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_urtwn.c
@@ -5465,9 +5448,11 @@ usb 0586 341a .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_r
 usb 0586 341e .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 0586 341f .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_urtwn.c
 usb 0586 343e .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
-usb 058f 6366 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/umass_quirks.c
 usb 05a6 0101 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
+usb 05ab 0031 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/umass_quirks.c
+usb 05ab 0351 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/umass_quirks.c
 usb 05ab 081a .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/umass_quirks.c
+usb 05ab 5701 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/umass_quirks.c
 usb 05ac 020f .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/usb_quirks.c
 usb 05ac 0215 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/usb_quirks.c
 usb 05ac 1290 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/uipad.c
@@ -5517,7 +5502,6 @@ usb 05e9 0008 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_k
 usb 05e9 0009 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_kue.c
 usb 0609 031d .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/irmce.c
 usb 0638 0268 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/uscanner.c
-usb 0665 5161 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/usb_quirks.c
 usb 066b 200c .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_aue.c
 usb 066b 20f9 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_axe.c
 usb 066b 2202 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_aue.c
@@ -5599,9 +5583,6 @@ usb 0789 0163 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_r
 usb 0789 0164 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 0789 0166 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 0789 0168 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
-usb 0789 0169 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
-usb 0789 016b .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
-usb 0789 0170 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 079b 004a .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_zyd.c
 usb 079b 0062 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_zyd.c
 usb 07a6 0986 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_aue.c
@@ -5720,6 +5701,7 @@ usb 083a e501 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_z
 usb 083a e503 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_zyd.c
 usb 083a e506 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_zyd.c
 usb 083a f522 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_otus.c
+usb 0841 0001 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/urio.c
 usb 0846 1001 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_kue.c
 usb 0846 1002 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_kue.c
 usb 0846 1020 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_aue.c
@@ -5823,9 +5805,7 @@ usb 0b05 1760 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_r
 usb 0b05 1761 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 0b05 1784 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 0b05 1790 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
-usb 0b05 179d .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 0b05 17ab .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_urtwn.c
-usb 0b05 17ad .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 0b05 17ba .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_urtwn.c
 usb 0b05 17c0 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_urtwn.c
 usb 0b39 0421 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/uftdi.c
@@ -5872,6 +5852,7 @@ usb 0bda 8197 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_u
 usb 0bda 8198 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_urtw.c
 usb 0bda 8754 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_urtwn.c
 usb 0bf8 1009 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_upgt.c
+usb 0c45 1010 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/uyurex.c
 usb 0c52 2101 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/uftdi.c
 usb 0c52 2413 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/uftdi.c
 usb 0c52 2423 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/uftdi.c
@@ -5924,7 +5905,6 @@ usb 0db0 a874 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_r
 usb 0db0 a877 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_axe.c
 usb 0df6 000d .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_urtw.c
 usb 0df6 0017 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
-usb 0df6 0021 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_mos.c
 usb 0df6 0028 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_urtw.c
 usb 0df6 002b .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 0df6 002c .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
@@ -5932,7 +5912,6 @@ usb 0df6 002d .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_r
 usb 0df6 0036 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_zyd.c
 usb 0df6 0039 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 0df6 003b .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
-usb 0df6 003c .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 0df6 003d .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 0df6 003e .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 0df6 003f .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
@@ -5941,7 +5920,6 @@ usb 0df6 0041 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_r
 usb 0df6 0042 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 0df6 0047 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 0df6 0048 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
-usb 0df6 004d .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 0df6 0050 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 0df6 0051 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 0df6 0052 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_urtwn.c
@@ -6152,7 +6130,6 @@ usb 148f 3071 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_r
 usb 148f 3072 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 148f 3370 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 148f 3572 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
-usb 148f 3573 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 148f 5370 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 148f 5572 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 148f 8070 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
@@ -6176,6 +6153,7 @@ usb 14b2 7110 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_a
 usb 14ea ab10 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_zyd.c
 usb 14ea ab11 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_axe.c
 usb 14ea ab13 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_zyd.c
+usb 1527 0200 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/uyap.c
 usb 1527 0201 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/usb_quirks.c
 usb 1557 0002 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_atu.c
 usb 1557 7720 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_axe.c
@@ -6187,15 +6165,6 @@ usb 157e 300e .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_r
 usb 157e 3013 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 157e 3204 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_zyd.c
 usb 1582 6003 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_zyd.c
-usb 15a2 0041 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/usb_quirks.c
-usb 15a2 004e .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/usb_quirks.c
-usb 15a2 004f .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/usb_quirks.c
-usb 15a2 0052 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/usb_quirks.c
-usb 15a2 0054 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/usb_quirks.c
-usb 15a2 0061 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/usb_quirks.c
-usb 15a2 006a .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/usb_quirks.c
-usb 15a2 0076 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/usb_quirks.c
-usb 15a2 0080 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/usb_quirks.c
 usb 15a9 0004 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_rum.c
 usb 15a9 0006 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 15a9 0010 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
@@ -6315,7 +6284,6 @@ usb 1d4d 000c .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_r
 usb 1d4d 000e .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 1d4d 0010 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 1d4d 0011 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
-usb 1d6b 0010 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/ugensa.c
 usb 1eda 2012 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 1eda 2310 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 2001 1a00 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_axe.c
@@ -6336,10 +6304,6 @@ usb 2001 3c00 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_u
 usb 2001 3c05 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_axe.c
 usb 2001 3c09 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 2001 3c0a .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
-usb 2001 3c15 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
-usb 2001 3c1a .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
-usb 2001 3c1b .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
-usb 2001 3c1f .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 2001 4000 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_kue.c
 usb 2001 4001 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_aue.c
 usb 2001 4002 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_aue.c
@@ -6374,7 +6338,6 @@ usb 203d 14a1 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_r
 usb 203d 14a9 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 2040 7200 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/auvitek.c
 usb 2040 7240 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/auvitek.c
-usb 2080 000c .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/pci/if_ixlreg.h
 usb 20b8 8888 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 20f4 624d .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_urtwn.c
 usb 20f4 648b .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_urtwn.c
@@ -6438,11 +6401,8 @@ usb 8516 3071 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_r
 usb 8516 3072 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 8516 3572 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_run.c
 usb 9710 7703 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/umcs.c
-usb 9710 7730 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_mos.c
 usb 9710 7810 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/umcs.c
 usb 9710 7820 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/umcs.c
-usb 9710 7830 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_mos.c
-usb 9710 7832 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_mos.c
 usb 9710 7840 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/umcs.c
 usb 9846 9041 .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/if_urtwn.c
 usb 9e88 9e8f .. .. .. .. .. .. 0000 ffff : CONFIG__UNKNOWN__ : sys/dev/usb/uftdi.c
